@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="jakarta.tags.core"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core"
+      xmlns:ui="jakarta.faces.facelets">
+<f:view locale="en">
+   <h:head>
+      <title>Hello</title>
+   </h:head>
+   <h:body>
+     <!-- content -->
+       <h2>Hello</h2>
+       <h:form>
+           <h:panelGrid columns="2" cellpadding="2" cellspacing="2" border="0" styleClass="nobordergrid">
+               <h:outputLabel value="Your Name" />
+               <h:inputText name="name" value="${helloBean.input}" required="true" />
+               <h:outputLabel value="Your Filling" />
+               <h:selectOneMenu name="fillings" value="${helloBean.filling}">
+                   <f:selectItems value="${helloBean.fillingValues}" var="f" itemValue="#{f}" itemLabel="#{f.value}" />
+               </h:selectOneMenu>
+               <h:outputLabel />
+               <h:panelGroup>
+                   <h:commandButton id="submit" value="Submit" action="#{helloBean.submit()}">
+                       <f:ajax execute="@form" render="output" />
+                   </h:commandButton>
+                   <h:commandButton id="hisotry" value="History" action="#{helloBean.history()}" immediate="true" />
+               </h:panelGroup>
+           </h:panelGrid>
+       </h:form>
+       <h:panelGroup id="output">
+           <c:if test="${not empty helloBean.output}">
+               <p>
+                   Answer: #{helloBean.output}
+               </p>
+           </c:if>
+       </h:panelGroup>
+   </h:body>
+</f:view>
+</html>

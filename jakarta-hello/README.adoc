@@ -1,0 +1,34 @@
+= Jakarta Hello
+
+This simple program illustrates how to structure a Jakarta Web Application. It also demonstrates how to use Jakarta Faces as web UI template engine, Jakarta Validation for validating input and JPA to access relational databases.
+
+== Setup
+=== Glassfish
+Check if `domain2` is already created and running. If not create it. We are creating a own domain, because the default one, `domain1` using the Port 8080 which may give some problems.
+[source,shell]
+----
+asadmin list-domains
+asadmin create-domain --instanceport 8082 --adminport 4852 domain2
+asadmin start-domain domain2
+----
+
+=== Database
+Install and start PostgresSQL database locally and create `admin` user and `samples` database.
+[source,sql]
+----
+create user admin with password 'admin';
+create database samples owner admin;
+\c samples
+create schema demo authorization admin;
+\dn
+----
+
+Download and deploy the corresponding JDBC driver. We are using PostgresSQL. https://jdbc.postgresql.org/download/
+[source,shell]
+----
+cp postgresql-42.7.1.jar $GLASSFISH_HOME/glassfish/domains/domain2/lib
+asadmin restart-domain domain2
+asadmin --port 4852 create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PGSimpleDataSource --restype javax.sql.DataSource \
+  --property portNumber=5432:password=admin:user=admin:serverName=localhost:databaseName=samples samples
+asadmin --port 4852 create-jdbc-resource --connectionpoolid samples jdbc/samples
+----

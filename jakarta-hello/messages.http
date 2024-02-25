@@ -1,0 +1,17 @@
+### Get All
+GET {{host}}/{{path}}/
+
+### Get by ID
+GET {{host}}/{{path}}/1
+
+### Add new entity
+POST {{host}}/{{path}}/
+Content-Type: application/json
+
+{
+  "name": "Ulrich",
+  "fillings": "SAD"
+}
+
+### Delete last one
+DELETE {{host}}/{{path}}/5

@@ -1,0 +1,7 @@
+# Project exclude paths
+/demo-jakarta/.gradle/
+/demo-jakarta/build/
+/demo-jakarta/build/classes/java/main/
+/jakarta-hello/.gradle/
+/jakarta-hello/build/
+/jakarta-hello/build/classes/java/main/

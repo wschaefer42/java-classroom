@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="jakarta.tags.core"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core"
+      xmlns:ui="jakarta.faces.facelets">
+<f:view locale="en">
+    <h:head>
+        <title>History</title>
+    </h:head>
+    <h:body>
+        <!-- content -->
+        <h2>History</h2>
+        <h:form>
+            <h:dataTable value="#{helloBean.history}" var="item">
+                <h:column>${item.name}</h:column>
+                <h:column>${item.fillings}</h:column>
+                <h:column>${item.createdAt}</h:column>
+                <h:column>
+                    <h:commandLink value="Edit" action="#{helloBean.edit(item.id)}"/>
+                    <h:outputText value=" " escape="false" />
+                    <h:commandLink value="Delete" action="#{helloBean.delete(item.id)}">
+                        <f:ajax render="@form"/>
+                    </h:commandLink>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</f:view>
+</html>

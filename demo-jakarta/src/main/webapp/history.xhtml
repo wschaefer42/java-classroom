@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="jakarta.tags.core"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core"
+      xmlns:ui="jakarta.faces.facelets">
+<f:view locale="en">
+   <h:head>
+      <title>History</title>
+   </h:head>
+   <h:body>
+     <!-- content -->
+      <h2>History</h2>
+      <h:dataTable value="#{helloBean.history}" var="item">
+         <h:column>${item.name()}</h:column>
+         <h:column>${item.filling()}</h:column>
+         <h:column>${item.createdAt()}</h:column>
+      </h:dataTable>
+   </h:body>
+</f:view>
+</html>
