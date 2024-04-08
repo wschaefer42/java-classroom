@@ -6,13 +6,24 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/demo-jakarta" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-quarkus" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-spring" />
     <file type="web" url="file://$PROJECT_DIR$/jakarta-classroom" />
     <file type="web" url="file://$PROJECT_DIR$/jakarta-hello" />
+    <file type="web" url="file://$PROJECT_DIR$/jakarta-tryout" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-guestbook" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/hello-spring/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ProjectType">

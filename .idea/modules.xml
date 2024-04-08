@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo-jakarta.main.iml" filepath="$PROJECT_DIR$/.idea/modules/demo-jakarta.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jakarta-classroom.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jakarta-classroom.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo-spring.main.iml" filepath="$PROJECT_DIR$/.idea/modules/demo-spring.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jakarta-hello.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jakarta-hello.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jakarta-tryout.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jakarta-tryout.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-classroom.iml" filepath="$PROJECT_DIR$/java-classroom.iml" />
     </modules>
   </component>

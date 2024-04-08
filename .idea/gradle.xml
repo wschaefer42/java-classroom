@@ -5,7 +5,6 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/demo-jakarta" />
-        <option name="gradleJvm" value="temurin-19" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/demo-jakarta" />
@@ -13,20 +12,42 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/jakarta-classroom" />
-        <option name="gradleJvm" value="temurin-19" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/demo-quarkus" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/jakarta-classroom" />
+            <option value="$PROJECT_DIR$/demo-quarkus" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/demo-spring" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/demo-spring" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/jakarta-hello" />
-        <option name="gradleJvm" value="temurin-19" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/jakarta-hello" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/jakarta-tryout" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/jakarta-tryout" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-guestbook" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-guestbook" />
           </set>
         </option>
       </GradleProjectSettings>
